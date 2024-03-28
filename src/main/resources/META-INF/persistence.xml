@@ -3,6 +3,8 @@
 
     <persistence-unit name="jpabook">
 
+        <class>com.youable.bestudy.model.Member</class>
+
         <properties>
 
             <!-- 필수 속성 -->
