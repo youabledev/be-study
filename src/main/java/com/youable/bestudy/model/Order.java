@@ -2,9 +2,12 @@ package com.youable.bestudy.model;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
+@Table(name = "ORDERS")
 public class Order {
     @Id @GeneratedValue
     @Column(name = "ORDER_ID")
@@ -20,8 +23,21 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
+    @OneToMany(mappedBy = "ORDER_ITEM_ID")
+    private List<OrderItem> orderItems = new ArrayList<>();
+
     public void setMember(Member member) {
+        if (this.member != null) {
+            member.getOrders().remove(this);
+        }
+
         this.member = member;
+        member.getOrders().add(this);
+    }
+
+    public void addOrderItem(OrderItem orderItem) {
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
     }
 
     public Long getId() {
@@ -50,5 +66,13 @@ public class Order {
 
     public Member getMember() {
         return member;
+    }
+
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
     }
 }
