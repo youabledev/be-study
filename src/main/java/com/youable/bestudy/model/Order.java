@@ -26,6 +26,10 @@ public class Order {
     @OneToMany(mappedBy = "ORDER_ITEM_ID")
     private List<OrderItem> orderItems = new ArrayList<>();
 
+    @OneToOne
+    @JoinColumn(name = "DELEVERY_ID") // fk 연관관계 주인
+    private Delivery delivery;
+
     public void setMember(Member member) {
         if (this.member != null) {
             member.getOrders().remove(this);
@@ -74,5 +78,14 @@ public class Order {
 
     public void setOrderItems(List<OrderItem> orderItems) {
         this.orderItems = orderItems;
+    }
+
+    public Delivery getDelivery() {
+        return delivery;
+    }
+
+    public void setDelivery(Delivery delivery) {
+        this.delivery = delivery;
+        delivery.setOrder(this);
     }
 }
