@@ -2,8 +2,14 @@
 <persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
 
     <persistence-unit name="jpabook">
-
+        <class>com.youable.bestudy.model.Category</class>
+        <class>com.youable.bestudy.model.Delivery</class>
+        <class>com.youable.bestudy.model.DeliveryStatus</class>
+        <class>com.youable.bestudy.model.Item</class>
         <class>com.youable.bestudy.model.Member</class>
+        <class>com.youable.bestudy.model.Order</class>
+        <class>com.youable.bestudy.model.OrderItem</class>
+        <class>com.youable.bestudy.model.OrderStatus</class>
 
         <properties>
 
@@ -22,7 +28,7 @@
             <property name="hibernate.use_sql_comments" value="true" />
             <property name="hibernate.id.new_generator_mappings" value="true" />
 
-            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
     </persistence-unit>
 
