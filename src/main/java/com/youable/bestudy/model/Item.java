@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE) // 단일 테이블 전략 사용
+@DiscriminatorColumn(name = "DTYPE") // 구분 컬럼
 public class Item {
     @Id @GeneratedValue
     @Column(name = "ITEM_ID")

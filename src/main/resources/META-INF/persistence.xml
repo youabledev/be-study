@@ -10,6 +10,9 @@
         <class>com.youable.bestudy.model.Order</class>
         <class>com.youable.bestudy.model.OrderItem</class>
         <class>com.youable.bestudy.model.OrderStatus</class>
+        <class>com.youable.bestudy.model.Album</class>
+        <class>com.youable.bestudy.model.Book</class>
+        <class>com.youable.bestudy.model.Movie</class>
 
         <properties>
 
