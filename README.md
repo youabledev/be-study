@@ -8,3 +8,4 @@
   - [fix: 연관관계 매핑 이슈 수정](https://github.com/youabledev/be-study/commit/3105100fd383c6e5430f288ffc6adc3d5c720aab)
 
 ### 2024.04.07 ~ ch09
+- ch07 : [feat: 상품 종류의 하위 엔티티 추가](https://github.com/youabledev/be-study/commit/ed64ad74b7a991c6e5024304881a28861b640261)
