@@ -9,3 +9,4 @@
 
 ### 2024.04.07 ~ ch09
 - ch07 : [feat: 상품 종류의 하위 엔티티 추가](https://github.com/youabledev/be-study/commit/ed64ad74b7a991c6e5024304881a28861b640261)
+  - [feat: MappedSuperclass에 등록일, 수정일 추가](https://github.com/youabledev/be-study/commit/0f861102188bc0be3c91b5adde1876d0740fa220)
