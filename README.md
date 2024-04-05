@@ -8,6 +8,8 @@
   - [fix: 연관관계 매핑 이슈 수정](https://github.com/youabledev/be-study/commit/3105100fd383c6e5430f288ffc6adc3d5c720aab)
 
 ### 2024.04.07 ~ ch09
-- ch07 : [feat: 상품 종류의 하위 엔티티 추가](https://github.com/youabledev/be-study/commit/ed64ad74b7a991c6e5024304881a28861b640261)
+- ch07 :
+  - [feat: 상속 관계 매핑 - 단일 테이블 전략](https://github.com/youabledev/be-study/commit/ed64ad74b7a991c6e5024304881a28861b640261)
+  - [feat: 상속 관계 매핑 - 조인 전략](https://github.com/youabledev/be-study/commit/704a2a9c4c60623320d9cb6b486dfd4482cf4165)
   - [feat: MappedSuperclass에 등록일, 수정일 추가](https://github.com/youabledev/be-study/commit/0f861102188bc0be3c91b5adde1876d0740fa220)
 - ch08 : [feat: 지연 로딩 페치 전략, 영속성 전이 설정](https://github.com/youabledev/be-study/commit/b46af875a4a59b2e020fa5fe752032082ed3c1f9)
