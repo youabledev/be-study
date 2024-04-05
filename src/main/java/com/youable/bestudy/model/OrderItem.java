@@ -1,5 +1,6 @@
 package com.youable.bestudy.model;
 
+import com.youable.bestudy.model.items.Item;
 import jakarta.persistence.*;
 
 @Entity

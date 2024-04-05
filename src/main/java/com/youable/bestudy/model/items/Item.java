@@ -1,11 +1,14 @@
-package com.youable.bestudy.model;
+package com.youable.bestudy.model.items;
 
+import com.youable.bestudy.model.Category;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name = "DTYPE")
 public class Item {
     @Id @GeneratedValue
     @Column(name = "ITEM_ID")

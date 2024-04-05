@@ -5,7 +5,10 @@
         <class>com.youable.bestudy.model.Category</class>
         <class>com.youable.bestudy.model.Delivery</class>
         <class>com.youable.bestudy.model.DeliveryStatus</class>
-        <class>com.youable.bestudy.model.Item</class>
+        <class>com.youable.bestudy.model.items.Item</class>
+        <class>com.youable.bestudy.model.items.Album</class>
+        <class>com.youable.bestudy.model.items.Book</class>
+        <class>com.youable.bestudy.model.items.Movie</class>
         <class>com.youable.bestudy.model.Member</class>
         <class>com.youable.bestudy.model.Order</class>
         <class>com.youable.bestudy.model.OrderItem</class>
