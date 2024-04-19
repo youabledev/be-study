@@ -1,9 +1,8 @@
-package com.youable.bestudy.model;
+package com.youable.bestudy.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.aspectj.weaver.ast.Or;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,15 @@
-package com.youable.bestudy.model;
+package com.youable.bestudy.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "ORDERS")
 public class Order extends BaseEntity {
@@ -15,7 +19,7 @@ public class Order extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "MEMBER_ID")
-    private Member member;
+    private Member member; // 주문회원
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date orderDate;
@@ -30,11 +34,8 @@ public class Order extends BaseEntity {
     @JoinColumn(name = "DELEVERY_ID") // fk 연관관계 주인
     private Delivery delivery;
 
+    // == 연관관계 메소드 ==//
     public void setMember(Member member) {
-        if (this.member != null) {
-            member.getOrders().remove(this);
-        }
-
         this.member = member;
         member.getOrders().add(this);
     }
@@ -44,45 +45,6 @@ public class Order extends BaseEntity {
         orderItem.setOrder(this);
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Date getOrderDate() {
-        return orderDate;
-    }
-
-    public void setOrderDate(Date orderDate) {
-        this.orderDate = orderDate;
-    }
-
-    public OrderStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(OrderStatus status) {
-        this.status = status;
-    }
-
-    public Member getMember() {
-        return member;
-    }
-
-    public List<OrderItem> getOrderItems() {
-        return orderItems;
-    }
-
-    public void setOrderItems(List<OrderItem> orderItems) {
-        this.orderItems = orderItems;
-    }
-
-    public Delivery getDelivery() {
-        return delivery;
-    }
 
     public void setDelivery(Delivery delivery) {
         this.delivery = delivery;

@@ -1,5 +1,6 @@
 package com.youable.bestudy;
 
+import com.youable.bestudy.domain.Member;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
@@ -16,6 +17,7 @@ public class JPARunMain {
 
         try {
             tx.begin(); //트랜잭션 시작
+            saveMember(em);
             tx.commit();//트랜잭션 커밋
 
         } catch (Exception e) {
@@ -26,5 +28,11 @@ public class JPARunMain {
         }
 
         emf.close(); //엔티티 매니저 팩토리 종료
+    }
+
+    private static void saveMember(EntityManager em) {
+        Member m = new Member();
+        m.setName("테스터3");
+        em.persist(m);
     }
 }

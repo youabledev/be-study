@@ -1,4 +1,4 @@
-package com.youable.bestudy.model.items;
+package com.youable.bestudy.domain.items;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;

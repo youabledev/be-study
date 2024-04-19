@@ -1,4 +1,4 @@
-package com.youable.bestudy.model;
+package com.youable.bestudy.domain;
 
 import jakarta.persistence.Embeddable;
 import lombok.Getter;
