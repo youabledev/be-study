@@ -15,6 +15,7 @@ public class Member extends BaseEntity {
     @Column(name = "MEMBER_ID")
     private Long id;
 
+    @Column(unique = true)
     private String name;
 
     @Embedded
