@@ -1,5 +1,7 @@
 # description
 ---------
+- 자바 ORM 표준 JPA 프로그래밍 (저자 김영한/출판사 에이콘) 실습
+</br>
 
 ### 2024.03.31 ~ ch06
 - ch04
@@ -19,3 +21,6 @@
   - [feat: 지연 로딩 페치 전략, 영속성 전이 설정](https://github.com/youabledev/be-study/commit/b46af875a4a59b2e020fa5fe752032082ed3c1f9)
 - ch09
   - [refactor: Address 값 타입 매핑](https://github.com/youabledev/be-study/commit/1e92ecdf0eba1c34f5edd47e7c00d14e00d14f06)
+
+### ch10
+- [feat: MemberService, MemberRepository, test for MemberService](https://github.com/youabledev/be-study/commit/98ad4b6186d91078b10a38c5ffe8baa17ec09930)
