@@ -24,3 +24,4 @@
 
 ### ch10
 - [feat: MemberService, MemberRepository, test for MemberService](https://github.com/youabledev/be-study/commit/98ad4b6186d91078b10a38c5ffe8baa17ec09930)
+- [feat: ItemService, ItemRepository, test for ItemService](https://github.com/youabledev/be-study/commit/c5ca28e59c5f1f8f162a6a0200ed71299b3e524c)
